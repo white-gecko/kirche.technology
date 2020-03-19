@@ -1,0 +1,21 @@
+# Site settings
+title: Kirche.technology
+email:
+description: ""
+baseurl: ""
+url: "https://kirche.technology"
+
+# Build settings
+permalink: /:year/:month/:day/:title
+timezone: Europe/Berlin
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
