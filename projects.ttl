@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+@prefix doap: <http://usefulinc.com/ns/doap#>
+@prefix cat: <https://kirche.technology/category/>
+
+# https://projects.apache.org/create.html
+
+<mumble> a doap:Project ;
+  doap:name "Mumble" ;
+  doap:homepage <https://www.mumble.info/> ;
+  doap:repository [
+    doap:browse <https://github.com/mumble-voip/mumble> ;
+    doap:location <https://github.com/mumble-voip/mumble.git> ;
+    a :GitRepository
+  ] ;
+  doap:programming-language "C++" ;
+  doap:license <https://opensource.org/licenses/BSD-3-Clause> ;
+  doap:category <http://projects.apache.org/category/network-server>, cat:audioconferencing ; # https://projects.apache.org/categories.html
+  rdfs:comment "An audio conferencing system. Client-Server System." .
+
+<librechurch> a doap:Project ;
+  doap:name "LibreChurch" ;
+  doap:homepage <https://librechurch.org/> ;
+  doap:category cat:communityeffort ; # https://projects.apache.org/categories.html
+  rdfs:comment "Gemeinschaftlich und unabhängig arbeiten. Freie Software für eine freie Kirche." .
+
+<jitsi> a doap:Project ;
+  doap:name "Jitsi" ;
+  doap:homepage <https://jitsi.org/> ;
+  doap:repository [
+    doap:browse <https://github.com/jitsi/jitsi-meet> ;
+    doap:location <https://github.com/jitsi/jitsi-meet.git> ;
+    a :GitRepository
+  ] ;
+  doap:programming-language "Java Script" ;
+  doap:license <https://opensource.org/licenses/Apache-2.0> ;
+  doap:category cat:videoconferencing, cat:audioconferencing ; # https://projects.apache.org/categories.html
+  rdfs:comment "Secure, Simple and Scalable Video Conferences that you use as a standalone app or embed in your web application." .
